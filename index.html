@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rick and Morty Magic Portal</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Rick and Morty Magic Portal</h1>
+  <div class="container">
+    <!-- Rick image -->
+    <img src="img/rick.png" alt="Rick" class="character rick">
+
+    <!-- Magic portal -->
+    <div class="portal">
+      <div class="response-box">
+        <p id="response">What's your question, kid?</p>
+      </div>
+    </div>
+
+    <!-- Morty image -->
+    <img src="img/morty.png" alt="Morty" class="character morty">
+  </div>
+
+  <!-- Controls for user interaction -->
+  <div class="controls">
+    <input id="questionInput" type="text" placeholder="Ask a question...">
+    <button onclick="shootPortal()">Shoot the Portal Gun!</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Rick and Morty Magic Portal | Infinite dimensions, infinite possibilities!</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

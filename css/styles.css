@@ -1,0 +1,111 @@
+/* General styling */
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, #1a1a1a, #000000);
+  font-family: 'Courier New', monospace;
+  color: limegreen;
+  text-align: center;
+}
+
+/* Title styling */
+h1 {
+  font-size: 3rem;
+  margin: 20px 0;
+  text-transform: uppercase;
+  color: limegreen;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* Main container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  position: relative;
+}
+
+/* Characters (Rick and Morty) */
+.character {
+  width: auto;
+}
+
+.morty {
+  height: 300px;
+  transform: scaleX(-1);
+}
+
+.rick {
+  transform: scaleX(-1); /* Flip Rick so he faces the portal */
+  height: 300px;
+}
+
+/* Portal styling */
+.portal {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #43ff43, #28a428, #000);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 50px rgba(0, 255, 0, 0.8);
+  animation: portalGlow 2s infinite alternate;
+}
+
+.response-box {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px #000;
+  width: 80%;
+}
+
+/* Animations for portal glow */
+@keyframes portalGlow {
+  from {
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.6);
+  }
+  to {
+    box-shadow: 0 0 50px rgba(0, 255, 0, 1);
+  }
+}
+
+/* Controls for input and button */
+.controls {
+  margin: 20px auto;
+}
+
+.controls input {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid limegreen;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.controls button {
+  background-color: limegreen;
+  color: black;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.controls button:hover {
+  background-color: #33cc33;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 50px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
